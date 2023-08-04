@@ -7,6 +7,7 @@
 html {
   scroll-behavior: smooth;
   font-family: "Raleway", sans-serif;
+  --line-color: #585858;
 }
 
 @layer base {
@@ -36,6 +37,14 @@ html {
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#1acc89] to-[#709dff] text-white;
+    @apply shadow-xl shadow-gray-400 rounded-none uppercase bg-gradient-to-r from-[#1acc89] to-[#709dff] text-white;
+  }
+
+  input {
+    @apply w-full h-[52px] rounded-lg pl-6 capitalize;
+  }
+  input,
+  textarea {
+    @apply bg-transparent outline-none focus:ring-1 focus:ring-accent border border-white/20 placeholder:text-white/30 placeholder:font-light;
   }
 }
