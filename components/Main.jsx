@@ -11,6 +11,9 @@ import { fadeIn } from "../variants";
 const Main = () => {
   return (
     <div id="home" className="w-full h-screen text-center">
+      <div className="bg-[#1acc89] absolute top-[2rem] -z-10 right-[0rem] h-[20.25rem] w-[28.75rem] rounded-full blur-[20rem] sm:w-[28.75rem] dark:bg-[#1be0af]"></div>
+      <div className="bg-[#d795cd] absolute top-[6rem] -z-10 left-[50rem] h-[20.25rem] w-[28.75rem] rounded-full blur-[20rem] sm:w-[28.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#bc4b85]"></div>
+
       {/* text */}
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center    ">
         <div className="text-center flex flex-col   object-center justify-center items-center  xl:pt-40 xl:text-left h-full container mx-auto ">

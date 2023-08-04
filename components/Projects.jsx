@@ -12,7 +12,9 @@ const Projects = () => {
     <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <h1 className=" tracking-widest uppercase text-[#1acc89]">Projects</h1>
-        <h2 className="py-4">What I&apos;ve Built</h2>
+        <h2 className="py-4">
+          What we&apos;ve built<span className="text-accent">.</span>
+        </h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
             title="Property Finder"

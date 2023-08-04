@@ -5,8 +5,8 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 // import { useRouter } from 'next/router';
-import NavLogoRef from "../public/assets/xLogo.svg";
-import NavLogoWhiteRef from "../public/assets/xLogoWhite.svg";
+import NavLogoRef from "../public/assets/logo.svg";
+import NavLogoWhiteRef from "../public/assets/logoWhite.svg";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -69,7 +69,7 @@ const Navbar = () => {
             <Image
               src={NavLogo}
               alt="/"
-              width="75"
+              width="175"
               height="75"
               className="cursor-pointer"
             />

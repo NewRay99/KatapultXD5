@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import AboutImg from "../public/assets/about.png";
+import AboutImg from "../public/assets/hero.png";
 
 const About = () => {
   return (
@@ -9,9 +9,9 @@ const About = () => {
       id="about"
       className="w-full bg-slate-100 md:h-screen p-2 flex items-center py-16"
     >
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
-        <div className="col-span-2">
-          <h1 className="uppercase tracking-widest text-[#1acc89]">About</h1>
+      <div className="flex  md:flex-row flex-col m-2 w-max">
+        <div className="flex-1/2  min-w-[60%] z-10">
+          <h1 className="uppercase tracking-widest text-[#1acc89] ">About</h1>
           <h2 className="py-4">Vision & Inclusion</h2>
           <p className="py-2 text-gray-600">
             Inclusion is a guiding principle of Katapult X, and we strive to
@@ -34,8 +34,8 @@ const About = () => {
             </p>
           </Link>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-          <Image src={AboutImg} className="rounded-xl" alt="/" />
+        <div className="hidden  flex-1 scale-125 bottom-[50%] right-[100px] z-5 m-2 min-w-[40%] md:relative md:flex items-center justify-center  ease-in duration-300">
+          <Image src={AboutImg} alt="/" className="" />
         </div>
       </div>
     </div>
