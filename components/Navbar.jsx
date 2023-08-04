@@ -5,13 +5,15 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 // import { useRouter } from 'next/router';
-import NavLogo from "../public/assets/xLogo.svg";
+import NavLogoRef from "../public/assets/xLogo.svg";
+import NavLogoWhiteRef from "../public/assets/xLogoWhite.svg";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
-  const [linkColor, setLinkColor] = useState("#1f2937");
+  const [NavLogo, setNavLogo] = useState(NavLogoRef);
+  const [linkColor, setLinkColor] = useState("#1acc89");
   // const [position, setPosition] = useState('fixed')
   // const router = useRouter();
 
@@ -26,7 +28,7 @@ const Navbar = () => {
   //     setLinkColor('#ecf0f3');
   //   } else {
   //     setNavBg('#ecf0f3');
-  //     setLinkColor('#1f2937');
+  //     setLinkColor('#1acc89');
   //   }
   // }, [router]);
 
@@ -39,12 +41,14 @@ const Navbar = () => {
       if (window.scrollY >= 90) {
         setShadow(true);
 
-        setNavBg("#1f2937");
+        setNavBg("#1acc89");
         setLinkColor("#ecf0f3");
+        setNavLogo(NavLogoWhiteRef);
       } else {
         setShadow(false);
         setNavBg("#ecf0f3");
-        setLinkColor("#1f2937");
+        setLinkColor("#1acc89");
+        setNavLogo(NavLogoRef);
       }
     };
     window.addEventListener("scroll", handleShadow);
@@ -177,7 +181,7 @@ const Navbar = () => {
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <a
-                  href="https://www.linkedin.com/in/clint-briley-50056920a/"
+                  href="https://www.linkedin.com/in/jay-rohman-47aab124/"
                   target="_blank"
                   rel="noreferrer"
                 >
