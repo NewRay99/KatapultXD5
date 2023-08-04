@@ -9,7 +9,7 @@ const About = () => {
       id="about"
       className="w-full bg-slate-100 md:h-screen p-2 flex items-center py-16"
     >
-      <div className="flex  md:flex-row flex-col m-2 w-max">
+      <div className="max-w-[1240px] flex  md:flex-row flex-col m-2 w-max">
         <div className="flex-1/2  min-w-[60%] z-10">
           <h1 className="uppercase tracking-widest text-[#1acc89] ">About</h1>
           <h2 className="py-4">Vision & Inclusion</h2>

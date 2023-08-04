@@ -27,7 +27,7 @@ const Goals = () => {
       id="goals"
       className="w-full bg-black max-h-[500px] p-2 flex items-center py-8"
     >
-      <div className="flex   m-2 w-max">
+      <div className="max-w-[1240px] flex   m-2 w-max">
         <div className="flex md:flex-row flex-col">
           <div className="flex-1/2  min-w-[60%] z-10">
             <h1 className="uppercase tracking-widest text-[#1acc89] ">Goals</h1>
