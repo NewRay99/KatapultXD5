@@ -45,7 +45,13 @@ const Goals = () => {
                 {/* event */}
                 <div className="relative flex-1 after:w-[1px] after:h-full after:bg-black/10 after:absolute after:top-0 after:right-0">
                   <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                    <CountUp ref={ref} start={0} end={10} duration={5} />
+                    <CountUp
+                      ref={ref}
+                      start={0}
+                      end={10}
+                      duration={5}
+                      enableScrollSpy={true}
+                    />
                   </div>
                   <div className="text-xs uppercase text-center mx-1">
                     College Prospects into University
@@ -54,7 +60,13 @@ const Goals = () => {
                 {/* clients */}
                 <div className="relative flex-1 after:w-[1px] after:h-full after:bg-black/10 after:absolute after:top-0 after:right-0">
                   <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                    <CountUp ref={ref} start={0} end={1000} duration={3} />
+                    <CountUp
+                      ref={ref}
+                      start={0}
+                      end={1000}
+                      duration={3}
+                      enableScrollSpy={true}
+                    />
                   </div>
                   <div className="text-xs uppercase leading-[1.4]  mx-1">
                     Laptops to Schools
@@ -63,7 +75,12 @@ const Goals = () => {
                 {/* projects */}
                 <div className="relative flex-1 after:w-[1px] after:h-full after:bg-black/10 after:absolute after:top-0 after:right-0">
                   <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                    <CountUp start={0} end={50} duration={5} />
+                    <CountUp
+                      start={0}
+                      end={50}
+                      duration={5}
+                      enableScrollSpy={true}
+                    />
                   </div>
                   <div className="text-xs uppercase tracking-[1px] leading-[1.4]  mx-1">
                     Mentor Graduate
@@ -72,7 +89,14 @@ const Goals = () => {
                 {/* awards */}
                 <div className="relative flex-1">
                   <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                    £<CountUp start={0} end={100} duration={3} />K
+                    £
+                    <CountUp
+                      start={0}
+                      end={100}
+                      duration={3}
+                      enableScrollSpy={true}
+                    />
+                    K
                   </div>
                   <div className="text-xs uppercase tracking-[1px] leading-[1.4]  mx-1">
                     School Loans/Fees
